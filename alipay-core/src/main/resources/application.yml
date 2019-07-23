@@ -1,0 +1,13 @@
+server:
+  port: 8880
+dubbo:
+  application:
+    name: alipay-dubbo
+  registry:
+    protocol: zookeeper
+    address: 127.0.0.1:2181
+  protocol:
+    name: dubbo
+    port: 22222
+  monitor:
+    protocol: register

@@ -1,0 +1,13 @@
+server:
+  port: 8881
+dubbo:
+  application:
+    name: alipay-consumer
+  registry:
+    address: 127.0.0.1:2181
+    protocol: zookeeper
+  protocol:
+    name: dubbo
+    port: 33333
+  monitor:
+    protocol: registry
