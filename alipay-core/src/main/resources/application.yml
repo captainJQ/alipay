@@ -1,5 +1,5 @@
 server:
-  port: 8880
+  port: 8888
 dubbo:
   application:
     name: alipay-dubbo
@@ -8,6 +8,24 @@ dubbo:
     address: 127.0.0.1:2181
   protocol:
     name: dubbo
-    port: 22222
+    port: 22221
   monitor:
     protocol: register
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3306/testdemo
+    username: root
+    type: com.alibaba.druid.pool.DruidDataSource
+logging:
+  level:
+    com:
+      jql:
+        pay:
+          alipay:
+            mapper: info
+#  config: classpath:log4j.properties
+mybatis:
+  configuration:
+    log-impl: com.jql.pay.alipay.log.MyBatisStdOutImpl

@@ -1,5 +1,5 @@
 server:
-  port: 8881
+  port: 8882
 dubbo:
   application:
     name: alipay-consumer
@@ -8,6 +8,6 @@ dubbo:
     protocol: zookeeper
   protocol:
     name: dubbo
-    port: 33333
+    port: 33331
   monitor:
     protocol: registry

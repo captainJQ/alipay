@@ -16,4 +16,9 @@ public class TestController {
     public String test(String message){
         return  testRpcService.test(message);
     }
+
+    @RequestMapping(value = "/selectUser")
+    public String selectUser(String message){
+        return  testRpcService.test(message);
+    }
 }
