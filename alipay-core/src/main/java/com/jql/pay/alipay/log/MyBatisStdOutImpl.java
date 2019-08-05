@@ -5,9 +5,8 @@ import org.apache.ibatis.logging.Log;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-//@Slf4j
+@Slf4j
 public class MyBatisStdOutImpl implements Log {
-    private static  Logger log = LoggerFactory.getLogger(Log.class);
     public MyBatisStdOutImpl(String clazz){
     }
 
